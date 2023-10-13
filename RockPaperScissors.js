@@ -1,5 +1,4 @@
 let game = () => {
-    console.log("this the game of Rock, Paper, Scissors!");
+    console.log("this the gam
 }
 
-game();
