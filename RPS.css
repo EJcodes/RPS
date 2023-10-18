@@ -7,6 +7,19 @@ h1{
     text-align: center;
     color: #902bf5;
 }
+.column{
+    display:flex;
+    justify-content: center;
+    float:left;
+    width:33.33%;
+    padding: 10px;
+    height: 300px;
+}
+.row:after{
+    content:"";
+    display:flex;
+    clear: both;
+}
 
 .start-button {
     display: flex;
