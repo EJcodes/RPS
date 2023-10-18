@@ -5,6 +5,7 @@
 
 h1{
     text-align: center;
+    color: #902bf5;
 }
 
 .start-button {
@@ -13,4 +14,6 @@ h1{
     align-items: center;
     justify-content: center;
 }
-
+body {
+ background-color: #010101;
+}
