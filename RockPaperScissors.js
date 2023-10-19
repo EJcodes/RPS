@@ -1,27 +1,15 @@
-const startButton = document.getElementById("SB");
+let choiceBtns = document.querySelectorAll(".choiceBtns");
 
-const weaponIndex = ["Rock","Paper","Scissors"];
+const weaponIndex = [["Rock"],["Paper"],["Scissors"]];
 let Ai ="";
-let SBL= () => {
-    const aiChoice = Math.floor(Math.random() * 3);
-    console.log(weaponIndex[aiChoice])
-    return Ai = weaponIndex[aiChoice];
-}
-const iChooseYouRock = () => {
-    Response("Rock")
+
+for(let i = 0; i<weaponIndex.length; i++){
+    choiceBtns[i].addEventListener("click", function(){
+        let palyerChoice = weaponIndex[i][0];
+        let random = Math.floor(Math.random()*3);
+        let AiChoice =  weaponIndex[random][0];
+        console.log(palyerChoice, AiChoice);
+    })
 }
 
-
-let logic =(choice)=> {
-    if(Ai === choice){
-        console.log("Tie");
-    }else if(Ai === "Rock" && choice === "Scissor"){
-        console.log("You Win");
-    }else if (Ai === "Rock" && choice === "Paper"){
-        console.log("You lose");
-    }else{
-        console.log("error with AI")
-    }
-}
-    
 
