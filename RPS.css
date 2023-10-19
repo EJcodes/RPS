@@ -27,6 +27,10 @@ h1{
     align-items: center;
     justify-content: center;
 }
+.buttons{
+    color: #31bacd;
+    background-color: #31bacd;
+}
 body {
  background-color: #010101;
 }
